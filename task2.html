@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fibonaccians"></p>
+    <script>
+             // Task 2
+             function fibonacciSeries(n) {
+            let f = [0, 1];
+            for (let i = 2; i < n; i++) {
+                f[i] = f[i - 1] + f[i - 2];
+            }
+            return f.join(", ");
+        }
+        document.getElementById("fibonaccians").textContent = "Fibonacci series up to 10 terms: " + fibonacciSeries(20);
+
+    </script>
+</body>
+</html>
